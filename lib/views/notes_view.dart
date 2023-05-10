@@ -8,17 +8,17 @@ class NotesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Notes'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {
-              // TODO: Implement search functionality
-            },
-          ),
-        ],
-      ),
+      // appBar: AppBar(
+      //   title: const Text('Notes'),
+      //   actions: [
+      //     IconButton(
+      //       icon: const Icon(Icons.search),
+      //       onPressed: () {
+      //         // TODO: Implement search functionality
+      //       },
+      //     ),
+      //   ],
+      // ),
       body: const NotesViewBody(),
     );
   }

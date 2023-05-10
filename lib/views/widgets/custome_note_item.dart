@@ -6,14 +6,14 @@ class NoteItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16),
-      child: Container(
-        decoration: BoxDecoration(
-            color: const Color(0xffFFCC80),
-            borderRadius: BorderRadius.circular(16)),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
-          ListTile(
+    return Container(
+      decoration: BoxDecoration(
+          color: const Color(0xffFFCC80),
+          borderRadius: BorderRadius.circular(16)),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16),
+          child: ListTile(
             title: const Text(
               'Flutter tips',
               style: TextStyle(color: Colors.black, fontSize: 26),
@@ -33,16 +33,15 @@ class NoteItem extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 24),
-            child: Text(
-              'May 20 ,2022',
-              style:
-                  TextStyle(color: Colors.black.withOpacity(.4), fontSize: 16),
-            ),
-          )
-        ]),
-      ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(right: 24),
+          child: Text(
+            'May 20 ,2022',
+            style: TextStyle(color: Colors.black.withOpacity(.4), fontSize: 16),
+          ),
+        )
+      ]),
     );
   }
 }
